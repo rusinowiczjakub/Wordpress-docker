@@ -22,7 +22,7 @@ services:
     ports:
       - 3336
     volumes:
-      - ./wp-data:/docker-entrypoint-initdb.d
+      - ./wp-data:/var/lib/mysql
     environment:
       MYSQL_DATABASE: wordpress
       MYSQL_ROOT_PASSWORD: password
